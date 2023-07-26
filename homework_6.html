@@ -1,0 +1,60 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width; initial-scale=1" />
+	<link rel="stylesheet" href="css/all.css" type="text/css" />
+	<link rel="stylesheet" href="css/fonts.css" type="text/css" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<title>MovieWishList</title>
+</head>
+
+<body>
+	<header class="header center" id="header">
+		<a href="#" class="logo">
+			Logo
+		</a>
+		<nav class="nav">
+			<ul class="nav__list">
+				<li class="nav__item"><a href="#" class="nav__link">
+						Movies
+					</a></li>
+				<li class="nav__item"><a href="#" class="nav__link">
+						Series
+					</a></li>
+				<li class="nav__item"><a href="#" class="nav__link">
+						For kids
+					</a></li>
+			</ul>
+		</nav>
+	</header>
+	<form class="center" id="searchForm">
+		<input type="search" name="search" placeholder="input movie name" minlength="3">
+		<input type="number" name="year" placeholder="input movie year" minlength="4" maxlength="4">
+		<select class=" " name="genre">
+			<option value="" selected="selected">all</option>
+			<option value="movie">movie</option>
+			<option value="series">series</option>
+			<option value="episode">episode</option>
+			<option value="game">game</option>
+		</select>
+		<button>search</button>
+	</form>
+	<p class="loader">Loading...</p>
+	<main class="center grid" id="movies_list">
+	</main>
+	</div>
+	<footer class="footer center" id="footer">
+		<a href="#" class="logo">
+			Logo
+		</a>
+		<p class="copyright">
+			All rights reserved, 2023
+		</p>
+	</footer>
+	<script type="text/javascript" src="js/main.js"></script>
+	<!-- <script type="text/javascript" src="js/slider.js"></script> -->
+</body>
+
+</html>
