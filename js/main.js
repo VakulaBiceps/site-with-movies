@@ -40,6 +40,10 @@ document.querySelector('#searchForm').onsubmit = function (event) {
 
 function drawMovieList(movies) {
 	movies.forEach((movie, index) => {
+
+		const WRAPPER_FOR_PICTURE = document.createElement('a');
+		WRAPPER_FOR_PICTURE.setAttribute('href', `movie.html?title=${movie.Title}`);
+
 		const PICTURE = document.createElement('picture');
 		PICTURE.classList.add('card__img');
 
@@ -48,6 +52,8 @@ function drawMovieList(movies) {
 		IMG.setAttribute('alt', movie.Title + ' Poster');
 
 		PICTURE.appendChild(IMG);
+		WRAPPER_FOR_PICTURE.appendChild(PICTURE);
+
 
 		const CONTENT = document.createElement('div');
 		CONTENT.classList.add('card__content');
@@ -101,7 +107,7 @@ function drawMovieList(movies) {
 
 		const ARTICLE = document.createElement('article');
 		ARTICLE.classList.add('card');
-		ARTICLE.appendChild(PICTURE);
+		ARTICLE.appendChild(WRAPPER_FOR_PICTURE);
 		ARTICLE.appendChild(CONTENT);
 		ARTICLE.appendChild(TO_FAV_BTN);
 
