@@ -10,7 +10,6 @@ body {
 	background: #131823;
 	display: grid;
 	color: rgba(255, 255, 255, 0.9);
-	// grid-template-columns: 
 	min-height: 100vh;
 	grid-template-rows: minmax(60px, auto) 1fr minmax(60px, auto);
 	font-size: 20px;
@@ -22,15 +21,66 @@ img {
 	max-width: 100%;
 }
 
-.header,
-.footer {
-	background: #ccc;
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	left: 0;
+	top: 0;
+	z-index: 990;
+	width: 100%;
+	box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
+	background-color: rgba(255, 255, 255, 0.1);
+	font-family: 'Tilt Warp';
+	font-size: 28px;
+	font-weight: 400;
+
+	& a {
+		color: #ccc;
+	}
+
+	a:hover {
+		color: rgb(0, 183, 255);
+	}
+
 }
 
-.header,
+.footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	left: 0;
+	top: 0;
+	z-index: 990;
+	width: 100%;
+	box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
+	background-color: rgba(255, 255, 255, 0.1);
+	font-family: 'Tilt Warp';
+	font-size: 28px;
+	font-weight: 400;
+	gap: 20px;
+
+	& a {
+		color: #ccc;
+	}
+
+	& p {
+		margin-top: 10px;
+		font-family: 'Overpass';
+		font-size: 18px;
+		font-weight: 400;
+	}
+}
+
 .nav__list {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
+	gap: 70px;
+	position: relative;
+	font-family: 'Overpass';
+	font-size: 18px;
+	font-weight: 400;
 }
 
 .center {
