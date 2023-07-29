@@ -1,0 +1,31 @@
+.search {
+	display: flex;
+	justify-content: center;
+	max-height: 30px;
+	gap: 20px;
+	font-family: 'Tilt Warp';
+	font-size: 12px;
+	font-weight: 400;
+
+	select,
+	input {
+		border: 3px solid rgba(0, 212, 255, 0.5);
+		border-radius: 5px;
+		background-color: #131823;
+		color: #ccc;
+		font-family: 'Tilt Warp';
+		font-size: 13px;
+		font-weight: 400;
+
+		&::placeholder {
+			color: #ccc;
+			font-family: 'Tilt Warp';
+			font-size: 13px;
+			font-weight: 400;
+		}
+	}
+}
+
+.genre {
+	color: aquamarine;
+}
